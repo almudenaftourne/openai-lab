@@ -219,3 +219,21 @@ Paso 2: Escribe tres párrafos cautivadores e informativos sobre <Idea 1 relacio
 Paso 3: Escribe tres párrafos cautivadores e informativos sobre <Idea 2 relacionada con el Tema 1>
 Paso 4: Tags <Lista de #hashtags relevantes>
 ```
+___
+
+## :question: 5 - Crear una query SQL con lenguaje natural
+
+El siguiente prompt enviado a un modelo de codex devuelve una query de tipo select sobre las tablas que le pasamos al prompt.
+
+```
+### Postgres SQL tables, with their properties:
+#
+# Employee(id, name, department_id)
+# Department(id, name, address)
+# Salary_Payments(id, employee_id, amount, date)
+#
+### A query to list the names of the departments which employed more than 10 employees in the last 3 months
+
+SELECT
+```
+___
