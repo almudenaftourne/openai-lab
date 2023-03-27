@@ -236,4 +236,17 @@ El siguiente prompt enviado a un modelo de codex devuelve una query de tipo sele
 
 SELECT
 ```
+Escribe un prompt que genere la query SQL que contenga la información de todos los clientes de Zaragoza de nombre Juan, teniendo el cuenta que la información se encuentra en la tabla Clientes, que contiene las columnas: CustomerId, Nombre, Apellido, Empresa, Direccion, Ciudad, Provincia, CP. 
 ___
+
+<details>
+  <summary>:white_check_mark: Ver solución!</summary>
+
+```
+Table Clientes, columns = [CustomerId, Nombre, Apellido, Empresa, Direccion, Ciudad, Provincia, CP]
+Create a SQL query for all customers in Zaragoza named Juan 
+query =
+
+```
+
+</details>
