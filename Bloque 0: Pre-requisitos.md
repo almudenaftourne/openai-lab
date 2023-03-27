@@ -24,11 +24,15 @@ Para poder realizar los bloques de ejercicio, será necesario que realices estos
     * Opcion 1: Azure OpenAI
          
       Si tu empresa ya tiene acceso a Azure OpenAI, tendrás que tener el rol "Cognitive Services OpenAI User" o "Cognitive Services OpenAI Contributor" para poder lanzar peticiones a los modelos
+      
+       Para utilizar el servicio, lo haremos mediante el playground del OpenAI Studio:  [Azure OpenAI Studio](https://oai.azure.com/)
 
     * Opcion 2: OpenAI (público)
       
       Si no cuentas con acceso a OpenAI en Azure, siempre podrás acceder via la API pública. 
       
       Date de alta aqui: https://platform.openai.com/login
+      
+      Para utilizar el servicio, lo haremos mediante el playground: [Playground (public)](https://platform.openai.com/docs/models/playground)
       
       **Cuidado:** ten cuidado con los datos que envias a la API publica, y asegura que no envias ninguna informacion confidencial de tu empresa. 
