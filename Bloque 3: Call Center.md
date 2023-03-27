@@ -1,6 +1,6 @@
 # Bloque 3: Analisis de llamadas de un call center
 
-Como ejemplo, puedes utilizar el audio (mp3) de este repositorio. Pero verás que podríamos aplicar estos dos pasos a cualquier otro audio que tengas y quieras analizar, o que puedes grabar el audio en el Speech Studio directamente con tu micrófono. 
+Como ejemplo, puedes utilizar el audio (sample_data/sample_audio_parte_accidente.wav) de este repositorio. Pero verás que podríamos aplicar estos dos pasos a cualquier otro audio que tengas y quieras analizar, o que puedes grabar el audio en el Speech Studio directamente con tu micrófono. 
 
 ![Diagrama de Solucion con Speech to text y OpenAI](Bloque3.png)
 
