@@ -174,11 +174,21 @@ ___
 En esta parte, una vez hayamos extraido el texto del documento, vamos a utilizar Azure OpenAI para 3 tareas. Intenta crear un prompt para cada una de ellas, y experimenta con diferentes variantes. En la parte de "Ver Solucion" tienes algunos ejemplos. 
 
 ```
-Prompt 1: Extraer información simple (por ejemplo, alquier mensual, política de mascotas, partes involucradas, dirección, etc. 
+Prompt 1: Extraer información simple (por ejemplo, alquiler mensual, política de mascotas, partes involucradas, dirección, etc. 
 ```
 
 ```
 Prompt 2: Extraer información en JSON (pídele los mismos datos del Prompt 1, pero en formato muy concreto en JSON)
+
+  Completion que debes recibir de vuelta: 
+  
+  {
+    "contrato": {
+      "mensualidad": 1000,
+      "mascotas": "prohibido",
+      "clausulas": 6
+    }
+  }
 ```
 
 ```
