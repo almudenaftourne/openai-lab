@@ -41,54 +41,21 @@ ___
 
 ## Parte 2 - Diseño de prompt de analisis de la transcripcion
 
-En esta parte, una vez hayamos extraido el texto del documento, vamos a utilizar Azure OpenAI para 3 tareas. Intenta crear un prompt para cada una de ellas, y experimenta con diferentes variantes. En la parte de "Ver Solucion" tienes algunos ejemplos. 
-
-```
-Prompt 1: Extraer información simple (por ejemplo, intención de la llamada, partes involcradas, oferta realizada, plazo de respuesta de aceptacion de la oferta etc. 
-```
-
-```
-Prompt 2: Extraer información en JSON (pídele los mismos datos del Prompt 1, pero en formato muy concreto en JSON)
-```
-
-```
-Prompt 3: Preguntar algo concreto para ver si sabe responder sobre la conversacion.
-```
+En esta parte, una vez hayamos extraido el texto del documento, vamos a utilizar Azure OpenAI para obtener los campos de información relevantes de la conversación. El objetivo de esta sección es diseñar un prompt con las instrucciones adecuadas para conseguir el siguiente resultado:
 
 <details>
   <summary>:white_check_mark: Ver solución:</summary>
+  
+Extraiga la siguiente información de la conversación 
 
-* Extraer información
-  ```
-  Extrae el importe mensual a pagar de este contrato, dime si se aceptan mascotas, y el numero de clausulas que incluye. 
-  
-  Contrato a analizar: <texto extraido con forms recognizer>
-  ```
-  
-* Extraer información en JSON
-  ```
-  Extrae la siguiente información del contrato que te voy a pasar: 
-  
-  1. el importe mensual a pagar de este contrato (clave: mensualidad)
-  2. si se aceptan mascotas (clave: mascotas)
-  3. el numero de claúsulas que incluye el contrato (clave: clausulas)
-  
-  Devuelveme un JSON con los campos dentro de un objeto "contrato". 
-  
-  Contrato a analizar: <texto extraido con forms recognizer>:
-  ```
-  
-  Completion esperado:
-  ```
-  {
-  "contrato": {
-    "mensualidad": 1000,
-    "mascotas": "prohibido",
-    "clausulas": 6
-  }
-  }
-  ```
- 
+1. Motivo de la llamada (key: motivo_llamada)
+2. Causa del accidente (key: causa_accidente)
+3. Nombres de los conductores como array (key: nombre_conductores)
+4. DNI de la persona que llama (key: dni_asegurado)
+5. Localización del accidente (key: localizacion)
+6. Breve y detallado resumen (key: resumen)
+
+Asegure que todos los campos se contestan de manera breve, por ejemplo, para la localización simplemente el nombre. Contesta en formato JSON utilizando las keys indicadas para cada campo. Formatee el JSON como objecto llamado "resultados". Haga un pretty print del JSON y asegure que esta correctamente cerrado al final.
 
 </details>
 
