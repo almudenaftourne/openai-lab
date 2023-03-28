@@ -2,7 +2,7 @@
 
 En este último ejercicio vamos a probar la funcionalidad de ChatGPT, y vas a poder ir configurando el contexto para que vaya atinando más las respuestas y limitar el campo de conversación. 
 
-![UI de ChatGPT](Bloque4.png)
+![UI de ChatGPT](images/Bloque4.png)
 
 Antes de empezar, recuerda que:
 
