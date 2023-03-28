@@ -2,7 +2,7 @@
 
 Como ejemplo, puedes utilizar el pdf del contrato de ejemplo de este repositorio. Pero verás que podríamos aplicar estos dos pasos a cualquier otro documento que tengas y quieras analizar con OpenAI.
 
-![Diagrama de Solucion con Form Recognizer y OpenAI](Bloque2.png)
+![Diagrama de Solucion con Form Recognizer y OpenAI](images/Bloque2.png)
 
 Antes de empezar, recuerda que:
 
