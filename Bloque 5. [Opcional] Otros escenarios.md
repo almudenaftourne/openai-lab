@@ -7,6 +7,7 @@ Si ya has completado todos los bloques, te recomendamos revisar estos recursos a
     * Azure Open AI Embeddings: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/understand-embeddings   
     Te recomendamos revisar la documentación para entender como trabajar con embeddings y que opciones ofrece el servicio, y la solución planteada en el repositorio para entender como sería una implementación end-to-end aprovechando estas capacidades.
     * Tutorial de embeddings en Python: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/tutorials/embeddings?tabs=command-line
+    * Acelerador ChatGPT + Azure Cognitive Search: https://github.com/Azure-Samples/azure-search-openai-demo
 
 2. **Prompt engineering**:
     En los diferentes ejercicios hemos comprobado la importancia del llamado "diseño de prompt" o "prompt engineering" para que los modelos devuelvan una respuesta con el contenido adecuado y en el formato esperado. En este enlace puedes encontrar recomendaciones muy interesantes sobre como mejorar este diseño: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/prompt-engineering
